@@ -1,6 +1,6 @@
 I have covered all functional requirements/Bonus in the framework. Below are some highlights:
 
-Tests are runnable from the command line. Executer needs to have maven installed in the machine. Executer needs to clone/download the project from the mentioned repo and run command mvn run in command prompt. Test Script will start executing which can be seen in the logs in command prompt.
+Tests are runnable from the command line. Executer needs to have maven installed in the machine. Executer needs to clone/download the project from the mentioned repo: git@github.com:preeti14nov/QuantumTest.git and run command mvn run in command prompt. Test Script will start executing which can be seen in the logs in command prompt.
 
 Test run has been configured inside config.poperties file at project root folder only from where we can can change the URL
 
