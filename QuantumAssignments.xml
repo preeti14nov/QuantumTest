@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main Test Suite" parallel="tests" >
+ <!--  <listeners>
+        <listener class-name="com.quantum.generic.RetryListenerClasss"/>
+  </listeners>-->
+  
+<test name="Quantum Assignment Test on Chrome" parallel="tests">
+   <parameter name="browser" value="chrome"/>
+    	<groups>
+   			<run>
+   				<include name = "Regression" /> 
+			</run>
+   		</groups>
+      <classes>
+       		<class name="QuantumTest.QuantumTest.HomeTest"/>
+       </classes>
+      
+</test>
+<test name="Quantum Assignment Test on edge " parallel="tests">
+   <parameter name="browser" value="Edge"/>
+    	<groups>
+   			<run>
+   				<include name = "Regression" /> 
+			</run>
+   		</groups>
+      <classes>
+       		<class name="QuantumTest.QuantumTest.HomeTest"/>
+       </classes>
+      
+</test>
+
+<test name="Quantum Assignment Test on Firefox " parallel="tests">
+   <parameter name="browser" value="firefox"/>
+    	<groups>
+   			<run>
+   				<include name = "Regression" /> 
+			</run>
+   		</groups>
+      <classes>
+       		<class name="QuantumTest.QuantumTest.HomeTest"/>
+       </classes>
+       </test>
+      
+
+</suite>
